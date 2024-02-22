@@ -2,13 +2,9 @@
   "polyfillFiles": [
     "static/chunks/polyfills.js"
   ],
-<<<<<<< Updated upstream
   "devFiles": [
     "static/chunks/react-refresh.js"
   ],
-=======
-  "devFiles": [],
->>>>>>> Stashed changes
   "ampDevFiles": [],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
@@ -16,7 +12,6 @@
   ],
   "rootMainFiles": [],
   "pages": {
-<<<<<<< Updated upstream
     "/": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -32,9 +27,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ]
-=======
-    "/_app": []
->>>>>>> Stashed changes
   },
   "ampFirstPages": []
 }
