@@ -1,5 +1,11 @@
 .main {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  align-self: flex-end;
 }
 
 .progressBar {

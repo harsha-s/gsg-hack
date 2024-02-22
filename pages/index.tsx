@@ -11,6 +11,7 @@ export default function Home() {
   const [merchant, setMerchant] = useState('');
   const [merchants, setMerchants] = useState([]);
   const [newsletter, setNewsletter] = useState(false);
+  const [money, setMoney] = useState(0);
 
   const onMerchantAdd = (name) => {
     if (merchants.includes(name)) {
@@ -56,17 +57,19 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <nav>
+      <nav className={styles.navbar}>
         Hello {username},
+        Your money: <span style={{ color: 'green', marginRight: '5px' }}>${money}</span>
         <button onClick={handleLogoutBtnClick}>Logout</button>
       </nav>
 
       <section>
         <h1>Earn $5 bonus from us</h1>
-        <h3>Subscribe to our Newsletter <span className={`${styles.status} ${newsletter ? styles.done : styles.notyet}`}>{newsletter ? 'Done' : 'Not yet'}</span></h3>
+        <h4>You need to complete the steps below to get your bonus</h4>
+        <h3>1. Subscribe to our Newsletter <span className={`${styles.status} ${newsletter ? styles.done : styles.notyet}`}>{newsletter ? 'Done' : 'Not yet'}</span></h3>
         <input id="newsletter" type="checkbox" value={newsletter ? 'checked' : ''} onChange={(event) => setNewsletter(event.target.checked)} />
         <label htmlFor="newsletter">Daily newsletter</label>
-        <h3>Add your favorite merchants <span className={`${styles.status} ${merchants.length > 0 ? styles.done : styles.notyet}`}>{merchants.length > 0 ? 'Done' : 'Not yet'}</span></h3>
+        <h3>2. Add your favorite merchants <span className={`${styles.status} ${merchants.length > 0 ? styles.done : styles.notyet}`}>{merchants.length > 0 ? 'Done' : 'Not yet'}</span></h3>
         <input type="text" value={merchant} onKeyDown={(e) => { if (e.key === "Enter") { onMerchantAdd(merchant) }
         }} onChange={(event) => setMerchant(event.target.value)} placeholder="Your favorite merchant" />
         <ul>
@@ -78,13 +81,13 @@ export default function Home() {
             </div>
           )}
         </ul>
-        {newsletter && merchants.length > 0 && <button>Claim your $5 bonus</button>}
+        {newsletter && merchants.length > 0 && <button disabled={money >= 5} onClick={() => setMoney(5)}>Claim your $5 bonus</button>}
       </section>
       
       <hr />
 
       <section>
-        <h1>Get your cashback</h1>
+        <h1>Get your extra bonus</h1>
         <h3>Your purchase value</h3>
         <input type="number" max={100} onChange={(event) => setNumber(+event.target.value)} value={number} />
         <br />
