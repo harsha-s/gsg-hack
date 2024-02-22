@@ -31,7 +31,7 @@ const payload = {
     type: REMUNERATIONTYPE.PERCENTAGE
 }
 
-const ledgers = {}
+export const ledgers = {}
 
 export const retailers = [
     {

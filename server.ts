@@ -1,4 +1,4 @@
-import { retailers, user } from "./data";
+import { ledgers, retailers, user } from "./data";
 import { createServer } from "http";
 import { parse } from "url";
 import next from "next";
@@ -31,7 +31,7 @@ app.prepare().then(() => {
         res.end();
       } else if (pathname === '/ledger/get') {
         res.writeHead(200, {'Content-Type': 'text/plain'});
-        res.write('Ledger Get');
+        res.write(JSON.stringify(ledgers));
         res.end();
       } else if (pathname === '/user/dp') {
         res.writeHead(200, {'Content-Type': 'text/plain'});

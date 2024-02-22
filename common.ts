@@ -20,12 +20,8 @@ const calculateClv = (payload) => {
     return (getUserLifetime(payload.user) * getNumberOfTransaction(payload.user) * getRevenue(payload.val, payload.gsgComm, payload.customerComm));
  }
 
-
-const getLedgers = (user) => {
-    
-}
-
 const evaluateRules = (payload) => {
 
 }
  
+export { calculateClv, evaluateRules }
