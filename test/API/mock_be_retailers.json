@@ -1,0 +1,62 @@
+[
+  {
+      "id": "1",
+      "name": "JUST EAT",
+      "cover": "https://d18x8efkgbvdkf.cloudfront.net/images/j/justeat.png",
+      "logo": "https://d18x8efkgbvdkf.cloudfront.net/images/j/justeat_logo.png",
+      "desc": "Do you want to save on your Just Eat order? With iGraal, for every purchase made using our service, we give you back a part of the total spent. What are you waiting for? Start your shopping and get your Cashback now!",
+      "gsgComm": 50,
+      "customerComm": 50,
+      "type": "REMUNERATIONTYPE.PERCENTAGE"
+  },
+  {
+    "id": "2",
+    "name": "Guess",
+    "cover": "https://d18x8efkgbvdkf.cloudfront.net/images/g/Guess.png",
+    "logo": "https://d18x8efkgbvdkf.cloudfront.net/images/g/guess-logo.png",
+    "desc": "Do you want to save on your Guess order? With iGraal, for every purchase made using our service, we give you back a part of the total spent. What are you waiting for? Start your shopping and get your Cashback now!",
+    "gsgComm": "30",
+    "customerComm": "20",
+    "type": "REMUNERATIONTYPE.PERCENTAGE"
+  },
+  {
+    "id": "3",  
+    "name": "Stroili",
+    "cover": "https://d18x8efkgbvdkf.cloudfront.net/images/g/Stroli.png",
+    "logo": "https://d18x8efkgbvdkf.cloudfront.net/images/g/stroli-logo.png",
+    "desc": "Do you want to save on your Stroili order? With iGraal, for every purchase made using our service, we give you back a part of the total spent. What are you waiting for? Start your shopping and get your Cashback now!",
+    "gsgComm": "50",
+    "customerComm": "15",
+    "type": "REMUNERATIONTYPE.PERCENTAGE" 
+  },
+  {
+    "id": "4",  
+    "name": "ITA Airways",
+    "cover": "https://d18x8efkgbvdkf.cloudfront.net/images/i/ITA%20Airways.png",
+    "logo": "https://d18x8efkgbvdkf.cloudfront.net/images/i/ita_logo.png",
+    "desc": "Do you want to save on your ITA Airways booking? With iGraal, for every purchase made using our service, we give you back a part of the total spent. What are you waiting for? Start your shopping and get your Cashback now!",
+    "gsgComm": "50",
+    "customerComm": "15",
+    "type": "REMUNERATIONTYPE.PERCENTAGE"
+  },
+  {
+    "id": "5",  
+    "name": "JD Sports",
+    "cover": "https://d18x8efkgbvdkf.cloudfront.net/images/j/JD%20Sports.png",
+    "logo": "https://d18x8efkgbvdkf.cloudfront.net/images/j/JDSports_logo.png",
+    "desc": "Want to save on your JD Sports order? With iGraal, for every purchase made using our service, we give you back a part of the total spent. What are you waiting for? Start your shopping and get your Cashback now!",
+    "gsgComm": "50",
+    "customerComm": "15",
+    "type": "REMUNERATIONTYPE.PERCENTAGE"
+  },
+  {
+    "id": "6",  
+    "name": "eDreams",
+    "cover": "https://d18x8efkgbvdkf.cloudfront.net/images/e/edreams.png",
+    "logo": "https://d18x8efkgbvdkf.cloudfront.net/images/e/edreams_logo.png",
+    "desc": "Do you want to save on your eDreams bookings? With iGraal, for every purchase made using our service, we give you back a part of the total spent. What are you waiting for? Start your shopping and get your Cashback now!",
+    "gsgComm": "50",
+    "customerComm": "15",
+    "type": "REMUNERATIONTYPE.PERCENTAGE"
+  }
+]
