@@ -1,4 +1,3 @@
-import Link from "next/link";
 import 'normalize.css/normalize.css';
 // import 'bootstrap/dist/css/bootstrap.css';
 import styles from '../styles/index.module.css';
@@ -59,7 +58,7 @@ export default function Home() {
     <main className={styles.main}>
       <nav className={styles.navbar}>
         Hello {username},
-        Your money: <span style={{ color: 'green', marginRight: '5px' }}>${money}</span>
+        Your wallet: <span style={{ color: 'green', marginRight: '5px' }}>${money}</span>
         <button onClick={handleLogoutBtnClick}>Logout</button>
       </nav>
 
